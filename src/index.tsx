@@ -7,13 +7,14 @@ import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 
 import { Home } from './features/Home/Home';
+import { Colors } from './styles/colors';
 
 
 const AppContent:React.FC = () => (
   <>
     <StatusBar
       barStyle="dark-content"
-      backgroundColor='transparent'
+      backgroundColor={ Colors.TRANSPARENT }
     />
     <Home />
   </>
