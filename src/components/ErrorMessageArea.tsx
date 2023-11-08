@@ -3,8 +3,8 @@ import {
   StyleProp, StyleSheet, Text, View, ViewStyle
 } from 'react-native';
 
-import { Colors } from '../styles/colors';
-import { DEFAULT_BORDER_RADIUS, DEFAULT_MARGIN } from '../styles/consts';
+import { Colors } from 'styles/colors';
+import { DEFAULT_BORDER_RADIUS, DEFAULT_MARGIN } from 'styles/consts';
 
 import { Button } from './Button';
 

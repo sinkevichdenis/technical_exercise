@@ -2,9 +2,9 @@ import React, { useEffect, useReducer } from 'react';
 
 import {
   Actions, ActionType, apiReducer, initialState, StateType
-} from '../api/apiReducer';
-import { getMergedPullRequests, ResultType } from '../api/getMergedPullRequests';
-import { AnyError } from '../types';
+} from 'api/apiReducer';
+import { getMergedPullRequests, ResultType } from 'api/getMergedPullRequests';
+import { AnyError } from 'types';
 
 
 const START_DATE = '2023-07-01';

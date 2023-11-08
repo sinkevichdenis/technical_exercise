@@ -2,11 +2,11 @@ import React from 'react';
 import { ScrollView, StyleSheet, Text } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
-import { Button } from '../../components/Button';
-import { ErrorMessageArea } from '../../components/ErrorMessageArea';
-import { useGetMergedPullRequests } from '../../hooks/useGetMergedPullRequests';
-import { Colors } from '../../styles/colors';
-import { DEFAULT_MARGIN } from '../../styles/consts';
+import { Button } from 'components/Button';
+import { ErrorMessageArea } from 'components/ErrorMessageArea';
+import { useGetMergedPullRequests } from 'hooks/useGetMergedPullRequests';
+import { Colors } from 'styles/colors';
+import { DEFAULT_MARGIN } from 'styles/consts';
 
 
 export const Home: React.FC = React.memo(() => {

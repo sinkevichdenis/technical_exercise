@@ -1,4 +1,4 @@
-import { AnyError } from '../types';
+import { AnyError } from 'types';
 
 
 export enum Actions {
