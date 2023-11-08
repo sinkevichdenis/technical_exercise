@@ -13,7 +13,7 @@ export type StateType<T> = {
   error: AnyError | null,
 };
 
-type ActionType<T> = {
+export type ActionType<T> = {
   type: string,
   payload?: {
     response?: T[],
@@ -21,8 +21,8 @@ type ActionType<T> = {
   },
 };
 
-
 export const initialState = { data: [], loading: false, error: null };
+
 export const apiReducer = <T>(state: StateType<T>, action: ActionType<T>): StateType<T> => {
   switch (action.type) {
   case Actions.SET_LOADING:
