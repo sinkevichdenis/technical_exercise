@@ -1,4 +1,5 @@
 import React, { StrictMode } from 'react';
+import 'react-native-devsettings';
 import {
   StatusBar,
   StyleSheet
