@@ -7,7 +7,7 @@
     "ios": "react-native run-ios",
     "lint": "eslint ./src --ext .js,.jsx,.ts,.tsx --fix",
     "start": "react-native start",
-    "test": "jest",
+    "test": "jest --updateSnapshot --forceExit",
     "postinstall": "node ./scripts/setupProject"
   },
   "dependencies": {
@@ -21,9 +21,13 @@
     "@babel/plugin-transform-class-static-block": "^7.22.11",
     "@babel/preset-env": "7.23.2",
     "@babel/runtime": "7.23.2",
+    "@octokit/types": "^12.2.0",
     "@react-native/eslint-config": "0.74.0",
     "@react-native/metro-config": "0.73.2",
+    "@testing-library/react-hooks": "8.0.1",
+    "@testing-library/react-native": "12.3.2",
     "@tsconfig/react-native": "3.0.2",
+    "@types/jest": "29.5.8",
     "@types/react": "18.2.36",
     "@types/react-test-renderer": "18.0.5",
     "babel-jest": "29.7.0",
