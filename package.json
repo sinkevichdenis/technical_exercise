@@ -7,7 +7,8 @@
     "ios": "react-native run-ios",
     "lint": "eslint ./src --ext .js,.jsx,.ts,.tsx --fix",
     "start": "react-native start",
-    "test": "jest"
+    "test": "jest",
+    "postinstall": "node ./scripts/setupProject"
   },
   "dependencies": {
     "@octokit/rest": "^20.0.2",
