@@ -18,7 +18,6 @@ import { prepareHistogramData } from 'utils/prepareHistogramData';
 export const Home: React.FC = React.memo(() => {
   const { data, loading, error, refetch } = useGetMergedPullRequests();
   const { width: windowWidth } = useWindowDimensions();
-  //console.log(prepareHistogramData(mockOctokitFilteredResponse));
   //console.log('!!', data?.[0]);
   return (
     <SafeAreaView style={ styles.safeArea }>

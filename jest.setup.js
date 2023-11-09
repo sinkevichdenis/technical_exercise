@@ -7,3 +7,7 @@ jest.mock('@octokit/rest', () => ({
     paginate: jest.fn().mockResolvedValue(mockOctokitResponse),
   })),
 }));
+
+jest.mock('react-native-chart-kit', () =>({
+  BarChart: jest.fn(),
+}));

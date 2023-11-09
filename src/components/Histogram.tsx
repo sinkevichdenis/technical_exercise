@@ -33,23 +33,24 @@ export const Histogram: React.FC<Props> = React.memo(({
   width,
   height = 350,
   data,
-}) => {
-  return (
-    <View style={ containerStyle }>
-      <BarChart
-        style={ styles.graph }
-        data={ data }
-        width={ width }
-        height={ height }
-        chartConfig={ chartConfig }
-        verticalLabelRotation={ verticalLabelRotation }
-        fromZero
-        showValuesOnTopOfBars
-        showBarTops={ false }
-      />
-    </View>
-  );
-});
+}) => (
+  <View
+    style={ containerStyle }
+    testID='histogram'
+  >
+    <BarChart
+      style={ styles.graph }
+      data={ data }
+      width={ width }
+      height={ height }
+      chartConfig={ chartConfig }
+      verticalLabelRotation={ verticalLabelRotation }
+      fromZero
+      showValuesOnTopOfBars
+      showBarTops={ false }
+    />
+  </View>
+));
 
 const styles = StyleSheet.create({
   graph: {
