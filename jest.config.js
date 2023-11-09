@@ -19,6 +19,7 @@ module.exports = {
     '^components/(.*)': '<rootDir>/src/components/$1',
     '^features/(.*)': '<rootDir>/src/features/$1',
     '^hooks/(.*)': '<rootDir>/src/hooks/$1',
+    '^utils/(.*)': '<rootDir>/src/utils/$1',
   },
   modulePathIgnorePatterns: ['.*__mocks__.*'],
   collectCoverage: true,

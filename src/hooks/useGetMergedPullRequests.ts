@@ -31,7 +31,6 @@ export const useGetMergedPullRequests = (): StateType<ResultType> & { refetch: (
     fetchData(dispatch);
   }, []);
 
-
   return {
     ...data,
     refetch: () => fetchData(dispatch),
