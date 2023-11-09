@@ -7,10 +7,19 @@ import { filterCallback, getMergedPullRequests } from '../getMergedPullRequests'
 
 
 describe('getMergedPullRequests', () => {
-  it('paginate response', async () => {
+  it('request with default params', async () => {
     const result = await getMergedPullRequests({
       owner: 'owner',
       repo: 'repo',
+    });
+    expect(result).toEqual(mockOctokitResponse);
+  });
+
+  it('request with optional params', async () => {
+    const result = await getMergedPullRequests({
+      owner: 'owner',
+      repo: 'repo',
+      since: '2023-01-01',
     });
     expect(result).toEqual(mockOctokitResponse);
   });
