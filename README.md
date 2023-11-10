@@ -1,4 +1,10 @@
 ## This is a technical task for Scroders.
+# Unresolved Issues (for reviewers)
+Unfortunately, remains some unresolved or out-of-scope issues in the project.
+1) The GitHub API has restriction about a rate limit for un-authenticated apps (authentication is out-of-scope by PO approving), therefore the fetching data can be incorrect and return the error. In this case the app will be operate a mock data.
+2) The GitHub API returns not clearly data. The fetch parameter 'Since' allows us to get all data, which was updated(!!) after the above date. It means some merged PR can be updated after closing data, that we see in the result. The resolving this issue has been remained out-of-scope to according unstable data connection. Example:
+![Simulator Screenshot - iPhone Xs - 2023-11-09 at 22.46.58.png](..%2F..%2FDesktop%2FSimulator%20Screenshot%20-%20iPhone%20Xs%20-%202023-11-09%20at%2022.46.58.png)
+
 # Getting Started
 
 ## Step 1: Start the Metro Server
