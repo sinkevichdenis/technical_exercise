@@ -3,8 +3,8 @@
 Unfortunately, remains some unresolved or out-of-scope issues in the project.
 1) The GitHub API has restriction about a rate limit for un-authenticated apps (authentication is out-of-scope by PO approving), therefore the fetching data can be incorrect and return the error. In this case the app will be operate a mock data.
 2) The GitHub API returns not clearly data. The fetch parameter 'Since' allows us to get all data, which was updated(!!) after the above date. It means some merged PR can be updated after closing data, that we see in the result. The resolving this issue has been remained out-of-scope to according unstable data connection. Example:
-![Simulator Screenshot - iPhone Xs - 2023-11-09 at 22 46 58](https://github.com/sinkevichdenis/technical_exercise/assets/43539138/0017b685-c185-41be-8f67-572934389d94)
-
+   
+![Simulator Screenshot - iPhone Xs - 2023-11-09 at 22 46 58](https://github.com/sinkevichdenis/technical_exercise/assets/43539138/67d22854-fc50-4571-9d28-a83cf2772323)
 
 # Getting Started
 
