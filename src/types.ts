@@ -6,3 +6,9 @@ export type HistogramDataType = {
 };
 
 export type CollectionType = {[key: string]: number};
+
+export enum ApiActions {
+  SET_LOADING = 'setLoading',
+  SET_ERROR = 'setError',
+  SET_RESPONSE_DATA = 'setRequestData',
+}

@@ -1,11 +1,5 @@
-import { AnyError } from 'types';
+import { AnyError, ApiActions } from 'types';
 
-
-export enum Actions {
-  SET_LOADING = 'setLoading',
-  SET_ERROR = 'setError',
-  SET_RESPONSE_DATA = 'setRequestData',
-}
 
 export type StateType<T> = {
   data: T[],
@@ -21,15 +15,15 @@ export type ActionType<T> = {
   },
 };
 
-export const initialState = { data: [], loading: false, error: null };
+export const initialState = { data: [11], loading: false, error: null };
 
 export const apiReducer = <T>(state: StateType<T>, action: ActionType<T>): StateType<T> => {
   switch (action.type) {
-  case Actions.SET_LOADING:
+  case ApiActions.SET_LOADING:
     return { ...state, error: null, loading: true };
-  case Actions.SET_ERROR:
+  case ApiActions.SET_ERROR:
     return { ...state, error: action.payload?.error!, loading: false };
-  case Actions.SET_RESPONSE_DATA:
+  case ApiActions.SET_RESPONSE_DATA:
     return { ...state, data: action.payload?.response!, loading: false };
   default:
     return state;

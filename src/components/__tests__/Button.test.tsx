@@ -4,7 +4,7 @@ import React from 'react';
 import { Button } from '../Button';
 
 
-describe('BackButton component', () => {
+describe('Button component', () => {
   const mockedOnPress = jest.fn();
   const buttonText = 'test button';
 

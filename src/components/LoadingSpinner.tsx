@@ -14,7 +14,10 @@ type Props = {
 export const LoadingSpinner: React.FC<Props> = React.memo(({
   containerStyle,
 }) => (
-  <View style={ containerStyle }>
+  <View
+    style={ containerStyle }
+    testID='spinner'
+  >
     <ActivityIndicator
       size="large"
       color={ Colors.BLUE }

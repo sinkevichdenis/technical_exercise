@@ -1,0 +1,315 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home component handle error state 1`] = `
+<RNCSafeAreaView
+  edges={
+    {
+      "bottom": "additive",
+      "left": "additive",
+      "right": "additive",
+      "top": "additive",
+    }
+  }
+  style={
+    {
+      "backgroundColor": "#FFFFFF",
+      "flex": 1,
+    }
+  }
+>
+  <RCTScrollView
+    bounces={false}
+    style={
+      {
+        "padding": 16,
+      }
+    }
+  >
+    <View>
+      <View
+        style={
+          {
+            "marginTop": 48,
+          }
+        }
+        testID="home-content"
+      >
+        <Text
+          style={
+            {
+              "color": "#1D2330",
+            }
+          }
+        >
+          This is an example with mock data. Please try refetch a real data.
+        </Text>
+        <View
+          style={
+            {
+              "marginVertical": 8,
+            }
+          }
+          testID="histogram"
+        />
+        <View
+          style={
+            [
+              {
+                "borderColor": "#FF3B30",
+                "borderRadius": 12,
+                "borderWidth": 1,
+                "padding": 16,
+              },
+              undefined,
+            ]
+          }
+          testID="error-message-area"
+        >
+          <Text
+            style={
+              {
+                "color": "#FF3B30",
+                "fontSize": 16,
+                "lineHeight": 20,
+              }
+            }
+          >
+            undefined:
+error
+          </Text>
+          <View
+            accessibilityState={
+              {
+                "busy": undefined,
+                "checked": undefined,
+                "disabled": undefined,
+                "expanded": undefined,
+                "selected": undefined,
+              }
+            }
+            accessibilityValue={
+              {
+                "max": undefined,
+                "min": undefined,
+                "now": undefined,
+                "text": undefined,
+              }
+            }
+            accessible={true}
+            collapsable={false}
+            focusable={false}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              {
+                "alignItems": "center",
+                "backgroundColor": "#1D2330",
+                "borderRadius": 12,
+                "borderWidth": 1,
+                "justifyContent": "center",
+                "marginTop": 16,
+                "opacity": 1,
+                "paddingHorizontal": 16,
+                "paddingVertical": 8,
+              }
+            }
+            testID="error-area-btn"
+          >
+            <Text
+              style={
+                [
+                  {
+                    "color": "#FFFFFF",
+                    "fontSize": 16,
+                    "lineHeight": 20,
+                  },
+                  undefined,
+                ]
+              }
+            >
+              Try again
+            </Text>
+          </View>
+        </View>
+      </View>
+    </View>
+  </RCTScrollView>
+</RNCSafeAreaView>
+`;
+
+exports[`Home component handle initial state without data 1`] = `
+<RNCSafeAreaView
+  edges={
+    {
+      "bottom": "additive",
+      "left": "additive",
+      "right": "additive",
+      "top": "additive",
+    }
+  }
+  style={
+    {
+      "backgroundColor": "#FFFFFF",
+      "flex": 1,
+    }
+  }
+>
+  <RCTScrollView
+    bounces={false}
+    style={
+      {
+        "padding": 16,
+      }
+    }
+  >
+    <View>
+      <View
+        style={
+          {
+            "marginTop": 48,
+          }
+        }
+        testID="home-content"
+      >
+        <Text
+          style={
+            {
+              "color": "#1D2330",
+            }
+          }
+        >
+          This is an example with mock data. Please try refetch a real data.
+        </Text>
+        <View
+          style={
+            {
+              "marginVertical": 8,
+            }
+          }
+          testID="histogram"
+        />
+      </View>
+    </View>
+  </RCTScrollView>
+</RNCSafeAreaView>
+`;
+
+exports[`Home component handle successful state with data 1`] = `
+<RNCSafeAreaView
+  edges={
+    {
+      "bottom": "additive",
+      "left": "additive",
+      "right": "additive",
+      "top": "additive",
+    }
+  }
+  style={
+    {
+      "backgroundColor": "#FFFFFF",
+      "flex": 1,
+    }
+  }
+>
+  <RCTScrollView
+    bounces={false}
+    style={
+      {
+        "padding": 16,
+      }
+    }
+  >
+    <View>
+      <View
+        style={
+          {
+            "marginTop": 48,
+          }
+        }
+        testID="home-content"
+      >
+        <Text
+          style={
+            {
+              "color": "#1D2330",
+            }
+          }
+        >
+          This is a real data!!
+        </Text>
+        <View
+          style={
+            {
+              "marginVertical": 8,
+            }
+          }
+          testID="histogram"
+        />
+        <View
+          accessibilityState={
+            {
+              "busy": undefined,
+              "checked": undefined,
+              "disabled": undefined,
+              "expanded": undefined,
+              "selected": undefined,
+            }
+          }
+          accessibilityValue={
+            {
+              "max": undefined,
+              "min": undefined,
+              "now": undefined,
+              "text": undefined,
+            }
+          }
+          accessible={true}
+          collapsable={false}
+          focusable={false}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            {
+              "alignItems": "center",
+              "backgroundColor": "#1D2330",
+              "borderRadius": 12,
+              "borderWidth": 1,
+              "justifyContent": "center",
+              "marginTop": 16,
+              "opacity": 1,
+              "paddingHorizontal": 16,
+              "paddingVertical": 8,
+            }
+          }
+          testID="update-btn"
+        >
+          <Text
+            style={
+              [
+                {
+                  "color": "#FFFFFF",
+                  "fontSize": 16,
+                  "lineHeight": 20,
+                },
+                undefined,
+              ]
+            }
+          >
+            Update
+          </Text>
+        </View>
+      </View>
+    </View>
+  </RCTScrollView>
+</RNCSafeAreaView>
+`;

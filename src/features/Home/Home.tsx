@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import {
   ScrollView, StyleSheet, Text, useWindowDimensions, View
 } from 'react-native';
@@ -18,7 +18,11 @@ import { prepareHistogramData } from 'utils/prepareHistogramData';
 export const Home: React.FC = React.memo(() => {
   const { data, loading, error, refetch } = useGetMergedPullRequests();
   const { width: windowWidth } = useWindowDimensions();
-  //console.log('!!', data?.[0]);
+
+  const preparedData = useMemo(() =>
+    prepareHistogramData(data.length ? data : mockOctokitFilteredResponse),
+  [data]);
+
   return (
     <SafeAreaView style={ styles.safeArea }>
       <ScrollView
@@ -30,10 +34,13 @@ export const Home: React.FC = React.memo(() => {
             style={ styles.contentWrapper }
             testID='home-content'
           >
+            <Text style={ styles.text }>
+              { data.length ? 'This is a real data!!' : 'This is an example with mock data. Please try refetch a real data.' }
+            </Text>
             <Histogram
               containerStyle={ styles.histogram }
               width={ windowWidth - DEFAULT_MARGIN * 2 }
-              data={ prepareHistogramData(mockOctokitFilteredResponse) }
+              data={ preparedData }
             />
             { error && (
               <ErrorMessageArea
@@ -49,9 +56,6 @@ export const Home: React.FC = React.memo(() => {
                 testID='update-btn'
               />
             ) }
-            <Text style={ styles.text }>
-              { data?.length }
-            </Text>
           </View>
         ) }
       </ScrollView>
